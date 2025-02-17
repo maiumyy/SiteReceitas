@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cantinê</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <a class="navbar-brand p-0" href="index.html"> <img src="/img/logo.png" class="logo" alt=""> </a>
+            <form class="d-flex">
+                <input class="form-control me-2 rounded-0" type="search" placeholder="Buscar receitas">
+                <button class="btn btn-outline-light" type="submit">
+                    <i class="fa-solid fa-magnifying-glass icon text-success"></i>
+                </button>
+            </form>
+            <a href="login-page.html"><button
+                    class="btn btn-outline-light ms-1 rounded-0 border-dark">Login</button></a>
+            <a href="register-page.html"> <button class="btn btn-danger text-light ms-2 rounded-0">Registro</button>
+            </a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg p-2">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Árabe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Italiana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Japonesa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mexicana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brasileira</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chinesa</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mt-4 banner">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner container-fluid p-0" style="width: 95%;">
+                    <div class="carousel-item active container-fluid text-center p-0">
+                        <div class="row">
+                            <div class="card border-0 m-0 p-0 col-9">
+                                <img src="/img/strogonoff.svg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="fw-bold">Strogonoff de Carne</h4>
+                                    <p class="text-wrap">Que tal um Strogonoff de Carne cremoso e irresistível? Uma
+                                        receita fácil, rápida e perfeita para qualquer ocasião. Clique e aprenda a fazer
+                                        essa delícia agora!</p>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="card border-0 m-0 pb-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/bolinho.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Bolinho de Baunilha</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Bolinho de baunilha fofinho e
+                                            irresistível! Simples de fazer, perfeito para qualquer momento
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 m-0 pt-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/batata.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Batata Frita</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Batata frita crocante por fora e
+                                            macia por dentro! O segredo para a perfeição está aqui. Clique e descubra!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item container-fluid text-center p-0">
+                        <div class="row">
+                            <div class="card border-0 m-0 p-0 col-9">
+                                <img src="/img/macarrao.svg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="fw-bold">Macarrão alho e óleo</h4>
+                                    <p class="text-wrap">Macarrão alho e óleo simples, rápido e cheio de sabor! Perfeito
+                                        para qualquer momento</p>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="card border-0 m-0 pb-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/feijoada.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Feijoada completa</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Feijoada completa e irresistível!
+                                            Sabor caseiro para reunir família e amigos. Clique e aprenda a fazer essa
+                                            delícia!
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 m-0 pt-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/iogurte.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center alinhave-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Iogurte Proteico</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Iogurte proteico cremoso e
+                                            delicioso! Fácil de fazer e perfeito para sua alimentação
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item container-fluid text-center p-0">
+                        <div class="row">
+                            <div class="card border-0 m-0 p-0 col-9">
+                                <img src="/img/escondidinho.svg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="fw-bold">Escondidinho de carne</h4>
+                                    <p class="text-wrap">Escondidinho de carne cremoso e irresistível! Uma receita fácil
+                                        e perfeita para qualquer ocasião</p>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="card border-0 m-0 pb-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/pave.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Pavê de Chocolate</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Pavê cremoso e irresistível! A
+                                            sobremesa perfeita para qualquer ocasião. Clique e aprenda a receita agora
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 m-0 pt-1" style="height: 50%; margin-top: 1rem;">
+                                    <img src="/img/torrada.svg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center receita-pequena"
+                                        style="width: 100%; max-height: 50%;">
+                                        <h4 class="fw-bold m-0 text-wrap text-break"
+                                            style="max-height: 50%; font-size: 1.1vw;">Torrada Crocante</h4>
+                                        <p style="font-size: 0.7vw; max-height: 50%;">Torrada crocante com abacate
+                                            cremoso e molho delicioso! Uma combinação perfeita de sabor e frescor
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center newsletter">
+                <h2 class="text-danger fw-bold" style="font-family: 'Playfair Display', serif;
+">Inscreva-se na nossa Newsletter</h2>
+                <p class="text-muted">Receba nossas últimas receitas e novidades diretamente no seu email.</p>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email"
+                            required>
+                        <button class="btn btn-danger text-light" type="submit">Inscrever-se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="container mt-4 recipe-section">
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="recipesGrid"></div>
+    </div>
+    <script>
+        const apiKey = "c26461fda981456c8db07095a40f19ea";
+        fetch(`https://api.spoonacular.com/recipes/random?number=24&apiKey=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                let grid = document.getElementById("recipesGrid");
+                data.recipes.forEach(recipe => {
+                    let col = document.createElement("div");
+                    col.className = "col";
+                    col.innerHTML = `
+                    <div class="card recipe-card shadow-sm border-0">
+                        <img src="${recipe.image}" class="recipe-card-img-top" alt="${recipe.title}">
+                        <div class="recipe-card-body">
+                            <h5 class="recipe-card-title">${recipe.title}</h5>
+                            <p class="recipe-card-text text-secondary"><strong>Tipo:</strong> ${recipe.dishTypes.join(', ')}</p>
+                            <a href="${recipe.sourceUrl}" class="btn btn-danger text-light" target="_blank">Ver Receita</a>
+                        </div>
+                    </div>
+                `;
+                    grid.appendChild(col);
+                });
+            });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
